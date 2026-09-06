@@ -42,7 +42,7 @@ Existujúci vizuálny princíp výrobného denníka nemusí zmiznúť.
 Používateľ môže naďalej vidieť známy pohľad:
 
 ```text
-Stroj | Operátor | Zákazka | Detail | Operácia | Stav | Od | Trvanie
+Stroj | Operátor | Zákazka | Súčiastka | Operácia | Stav | Od | Trvanie
 ```
 
 Rozdiel je v tom, že tento pohľad už nie je primárnym miestom uloženia dát. Generuje sa z udalostí uložených v databáze.
@@ -60,7 +60,7 @@ Príklady informácií, ktoré môžu byť súčasťou udalosti:
 - rola osoby,
 - začiatok a koniec,
 - výrobná zákazka,
-- detail,
+- súčiastka,
 - operácia,
 - stav stroja,
 - kategória udalosti,
@@ -85,7 +85,7 @@ Kategória: Nastavovanie
 Dôvod: Výmena nástroja
 ```
 
-Tým zostáva časová os stroja jednoduchá a zároveň sa nestráca detail.
+Tým zostáva časová os stroja jednoduchá a zároveň sa nestráca podrobnosť.
 
 ## Navrhované dashboardy
 
@@ -100,7 +100,7 @@ Pohľad zameraný na priebeh stavu jednotlivých strojov:
 - odkedy stav trvá,
 - hlavné príčiny nevýroby,
 - časová chronológia udalostí,
-- zákazka / detail / operácia.
+- zákazka / súčiastka / operácia.
 
 ### Operátori
 
@@ -126,7 +126,7 @@ Pohľad na technické zásahy a podporné činnosti:
 - rozdelenie podľa typu činnosti,
 - história práce na strojoch.
 
-### Detaily
+### Súčiastky
 
 Pohľad na priebeh výrobnej zákazky a operácie:
 
