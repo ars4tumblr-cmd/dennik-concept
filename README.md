@@ -21,6 +21,27 @@ Udalosti = jediný zdroj pravdy
 
 Používateľ nemení dashboard ani aktuálny stav priamo. Zapíše udalosť a všetky pohľady sa vypočítajú z tej istej histórie.
 
+## Prečo je reforma potrebná
+
+Súčasný Denník má jednu veľkú výhodu: ľudia ho poznajú a vedia v ňom rýchlo nájsť základnú informáciu. Preto sa zachováva jeho zrozumiteľný vizuálny princíp. Problémom nie je samotný vzhľad tabuľky, ale to, že jeden Excel súbor súčasne plní úlohu vstupného formulára, databázy, histórie, výpočtov, kontroly chýb aj dashboardu.
+
+V praxi to spôsobuje opakujúce sa problémy:
+
+- rovnaký fakt sa zapisuje na viacerých miestach a jednotlivé zápisy si môžu odporovať;
+- viac udalostí sa mieša v jednej poznámke, takže typ práce, príčina, výsledok a komentár nie sú oddelené;
+- voľný text vytvára rôzne názvy toho istého stroja, dôvodu alebo činnosti;
+- časové úseky operátora, zoraďovača a stroja sa môžu prekrývať a konflikt sa odhalí až spätne;
+- ručné úpravy môžu poškodiť vzorce, rozsahy, formátovanie alebo význam historických údajov;
+- oprava nesprávneho zápisu často prepíše pôvodnú informáciu bez jasnej auditnej stopy;
+- aktuálny stav stroja, človeka alebo súčiastky sa nedá spoľahlivo určiť iba podľa poslednej viditeľnej bunky;
+- každá ďalšia analýza vyžaduje nové ručné čistenie a vysvetľovanie údajov.
+
+Následok nie je iba nepresný report. Chybný názov stroja, nepresný čas alebo chýbajúci kontext sa prenáša do nadväzujúcich procesov. Ďalší ľudia potom musia dohľadávať skutočný priebeh, opravovať už raz zapísanú prácu a rozhodovať, ktorému údaju veriť. Jedna malá chyba pri zápise tak vytvára ďalšiu administratívu, spomaľuje reakciu na problém a môže skresliť vyhodnotenie práce.
+
+Reforma presúva kontrolu na okamih vzniku udalosti. Riadený formulár ponúkne platné stroje, osoby, dôvody a kontext; systém okamžite odmietne konflikt vlastníctva alebo neúplný zápis. Každý fakt sa uloží raz, opravy zostanú dohľadateľné a všetky pohľady ukážu rovnakú výrobnú realitu.
+
+Zmyslom reformy teda nie je iba pohodlnejšie zadávanie. Ide o spoľahlivé údaje, menej ručných opráv, rýchlejšie rozhodovanie počas zmeny a dôveryhodný podklad pre ďalšie procesy.
+
 ## Overený stav prototypu
 
 Lokálny Frappe prototyp už beží cez Docker a MariaDB so syntetickými dátami. Overený je celý priechod:
